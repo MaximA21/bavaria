@@ -1,17 +1,51 @@
 import './App.css'
 import {Spotlight} from "./components/Spotlight.jsx";
 import {ShimmerHeadline} from "./components/ShimmerHeadline.jsx";
-import {Card, CardBody, CardFooter, CardHeader, Divider, Image, Link} from "@nextui-org/react";
+import {Button, Card, CardBody, CardFooter, CardHeader, Divider, Image, Link} from "@nextui-org/react";
+import {GitHubIcon} from "./components/GitHubIcon.jsx";
 
 function App() {
     return (
         <>
-            <header style={{color: "white", background: "white"}}>
-                github
+            <header className="pb-32 pt-2 flex gap-5 items-center justify-center">
+                <Button color="success"
+                        endContent={<img src={"/assets/images/bavarianBrezel.png"} className={"w-0.5 h-0.5"}/>}>
+                    Take a photo
+                </Button>
+                <Button color="success" endContent={<GitHubIcon/>}>
+                    Take a photo
+                </Button>
             </header>
 
 
-            <main className={"div"}>
+            <main className={"p-9"}>
+
+
+                <div className="between-lines_wrapper__QeHD9 between-lines_wrapper-gradient__abLQd">
+                        Maxim Akishin
+                </div>
+                <div className={"hero__lines"}>
+                    <div className={"hero__wlines"}>
+                        <div className={"hero__hline"} style={{gridArea: "h-line-1", opacity: "0.75"}}/>
+                        <div className={"hero__hline"} style={{gridArea: "h-line-2", opacity: "1"}}/>
+                        <div className={"hero__hline"} style={{gridArea: "h-line-3", opacity: "1"}}/>
+                        <div className={"hero__hline"} style={{gridArea: "h-line-4", opacity: "1"}}/>
+                        <div className={"hero__hline"} style={{gridArea: "h-line-5", opacity: "1"}}/>
+                        <div className={"hero__hline"} style={{gridArea: "h-line-6", opacity: "1"}}/>
+                        <div className={"hero__hline"} style={{gridArea: "h-line-7", opacity: "1"}}/>
+                        <div className={"hero__hline"} style={{gridArea: "h-line-8", opacity: "1"}}/>
+                    </div>
+                    <div className="hero__vlines">
+                        <div className={"hero__vline"} style={{gridArea: "v-line-1", opacity: "1"}}/>
+                        <div className={"hero__vline"} style={{gridArea: "v-line-2", opacity: "0.6"}}/>
+                        <div className={"hero__vline"} style={{gridArea: "v-line-3", opacity: "0.6"}}/>
+                        <div className={"hero__vline"} style={{gridArea: "v-line-4", opacity: "1"}}/>
+
+
+                    </div>
+                </div>
+
+
                 <div className="dots-1 dots"></div>
                 <div className="dots-2 dots"></div>
                 <div className="dots-3 dots"></div>
@@ -38,19 +72,20 @@ function App() {
                         duration={"4s"}/>
                 </div>
             </main>
-            <section style={{display: "flex", gap: "16px", flexWrap: "wrap", justifyContent:"center"}}>
+            <section style={{display: "flex", gap: "16px", flexWrap: "wrap", justifyContent: "center"}}>
                 <Card className="py-4  dark">
                     <CardHeader className="flex gap-3">
                         <Image
                             alt="nextui logo"
                             height={40}
                             radius="sm"
-                            src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+                            src="/assets/images/bavarianBrezel.png"
                             width={40}
                         />
                         <div className="flex flex-col">
                             <p className="text-md">MunichStore</p>
-                            <p className="text-small text-default-500">nextui.org</p>
+                            <a href={"https://google.com"}
+                               className="text-small text-default-500 underline">nextui.org</a>
                         </div>
                     </CardHeader>
                     <Divider/>
@@ -58,7 +93,7 @@ function App() {
                         <Image
                             alt="Card background"
                             className="object-cover rounded-xl m-auto"
-                            src="images/Screenshot_2024-01-24_at_03.51.50-removebg-preview.png"
+                            src="/assets/images/bavarianBrezel.png"
                             removeWrapper={true} width={170}
                         />
                     </CardBody>
@@ -81,12 +116,13 @@ function App() {
                             alt="nextui logo"
                             height={40}
                             radius="sm"
-                            src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+                            src="/assets/images/vanilla.png"
                             width={40}
                         />
                         <div className="flex flex-col">
                             <p className="text-md">VanillaBlog</p>
-                            <a href={"https://google.com"} className="text-small text-default-500 underline ">nextui.org</a>
+                            <a href={"https://blogvanilla.vercel.app"}
+                               className="text-small text-default-500 underline ">blogvanilla.vercel.app</a>
                         </div>
                     </CardHeader>
                     <Divider/>
@@ -94,7 +130,7 @@ function App() {
                         <Image
                             alt="Card background"
                             className="object-cover rounded-xl m-auto"
-                            src="/assets/images/featured/featured-2.jpg"
+                            src="/assets/images/previewVanilla.png"
                             removeWrapper={true} width={170}
                         />
                     </CardBody>
@@ -103,7 +139,7 @@ function App() {
                         <Link
                             isExternal
                             showAnchorIcon
-                            href="https://github.com/nextui-org/nextui"
+                            href="https://github.com/MaximA21/blogvanilla"
                         >
                             Visit source code on GitHub.
                         </Link>
@@ -117,7 +153,41 @@ function App() {
                             alt="nextui logo"
                             height={40}
                             radius="sm"
-                            src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+                            src="/assets/images/fd.png"
+                            width={40}
+                        />
+                        <div className="flex flex-col">
+                            <p className="text-md">FutureDrive<br/> Technologies</p>
+
+                        </div>
+                    </CardHeader>
+                    <Divider/>
+                    <CardBody className="overflow-visible py-2 ">
+                        <Image
+                            alt="Card background"
+                            className="object-cover rounded-xl m-auto"
+                            src="/assets/images/previewFd.png"
+                            removeWrapper={true} width={170}
+                        />
+                    </CardBody>
+                    <Divider/>
+                    <CardFooter>
+                        <Link
+                            isExternal
+                            showAnchorIcon
+                            href="https://www.iabg.de/sichere-mobilitaet-der-zukunft/sicheres-autonomes-fahren/testfeld-fuer-autonomes-fahren"
+                        >
+                            Read more about the project.
+                        </Link>
+                    </CardFooter>
+                </Card>
+                <Card className="py-4  dark">
+                    <CardHeader className="flex gap-3">
+                        <Image
+                            alt="nextui logo"
+                            height={40}
+                            radius="sm"
+                            src="/assets/images/fd.png"
                             width={40}
                         />
                         <div className="flex flex-col">
@@ -130,7 +200,7 @@ function App() {
                         <Image
                             alt="Card background"
                             className="object-cover rounded-xl m-auto"
-                            src="/assets/images/featured/bavarianHat.png"
+                            src="/assets/images/bavarianHat.png"
                             removeWrapper={true} width={170}
                         />
                     </CardBody>
@@ -145,7 +215,6 @@ function App() {
                         </Link>
                     </CardFooter>
                 </Card>
-
 
             </section>
 
