@@ -94,7 +94,7 @@ function App() {
                         <Image
                             alt="Card background"
                             className="object-cover rounded-xl m-auto"
-                            src="../assets/images/featured/featured-2.jpg"
+                            src="/assets/images/featured/featured-2.jpg"
                             removeWrapper={true} width={170}
                         />
                     </CardBody>
@@ -130,7 +130,7 @@ function App() {
                         <Image
                             alt="Card background"
                             className="object-cover rounded-xl m-auto"
-                            src="../assets/images/featured/bavarianHat.png"
+                            src="/assets/images/featured/bavarianHat.png"
                             removeWrapper={true} width={170}
                         />
                     </CardBody>
