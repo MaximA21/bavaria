@@ -2,19 +2,23 @@ import './App.css'
 import {Spotlight} from "./components/Spotlight.jsx";
 import {ShimmerHeadline} from "./components/ShimmerHeadline.jsx";
 import {Button, Card, CardBody, CardFooter, CardHeader, Divider, Image, Link} from "@nextui-org/react";
-import {GitHubIcon} from "./components/GitHubIcon.jsx";
+import {SocialsIcon} from "./components/SocialsIcon.jsx";
 
 function App() {
     return (
         <>
             <header className="pb-32 pt-2 flex gap-5 items-center justify-center">
-                <Button color="success"
-                        endContent={<img src={"/assets/images/bavarianBrezel.png"} className={"w-0.5 h-0.5"}/>}>
-                    Take a photo
+<a href={"https://www.linkedin.com/in/maxim-akishin-78a7a0259"} target={"_blank"} rel={"noreferrer"}>
+                <Button className={"bg-main"}
+                        endContent={<SocialsIcon icon={"linkedin"} />}>
+                    LinkedIn
                 </Button>
-                <Button color="success" endContent={<GitHubIcon/>}>
-                    Take a photo
+</a>
+                <a href={"https://github.com/MaximA21"} target="_blank" rel="noreferrer">
+                <Button className={"bg-main"} endContent={<SocialsIcon icon={"github"}/>}>
+                    GitHub
                 </Button>
+                </a>
             </header>
 
 
@@ -54,7 +58,7 @@ function App() {
 
 
                 </div>
-                <h1 style={{color: "white"}}>I am Maxim. A Computer Science Studetn at LMu</h1>
+                <h1>I am Maxim,<br/> a computer science student at the LMU<br/>and a passionate developer.</h1>
 
                 <div className={"hero__spotlights"}>
                     < Spotlight
@@ -72,7 +76,7 @@ function App() {
                         duration={"4s"}/>
                 </div>
             </main>
-            <section style={{display: "flex", gap: "16px", flexWrap: "wrap", justifyContent: "center"}}>
+            <section className={"pb-32"} style={{display: "flex", gap: "16px", flexWrap: "wrap", justifyContent: "center"}}>
                 <Card className="py-4  dark">
                     <CardHeader className="flex gap-3">
                         <Image
@@ -84,8 +88,8 @@ function App() {
                         />
                         <div className="flex flex-col">
                             <p className="text-md">MunichStore</p>
-                            <a href={"https://google.com"}
-                               className="text-small text-default-500 underline">nextui.org</a>
+                            <a href={"https://themunichstore.vercel.app"}
+                               className="text-small text-default-500 underline">themunichstore.vercel.app</a>
                         </div>
                     </CardHeader>
                     <Divider/>
@@ -102,7 +106,7 @@ function App() {
                         <Link
                             isExternal
                             showAnchorIcon
-                            href="https://github.com/nextui-org/nextui"
+                            href="https://github.com/MaximA21/themunichstore"
                         >
                             Visit source code on GitHub.
                         </Link>
@@ -187,12 +191,11 @@ function App() {
                             alt="nextui logo"
                             height={40}
                             radius="sm"
-                            src="/assets/images/fd.png"
+                            src="/assets/images/Eyes-Emoji.png"
                             width={40}
                         />
                         <div className="flex flex-col">
-                            <p className="text-md">FutureDrive Technologies</p>
-                            <p className="text-small text-default-500">nextui.org</p>
+                            <p className="text-md">More coming soon...</p>
                         </div>
                     </CardHeader>
                     <Divider/>
@@ -200,8 +203,8 @@ function App() {
                         <Image
                             alt="Card background"
                             className="object-cover rounded-xl m-auto"
-                            src="/assets/images/bavarianHat.png"
-                            removeWrapper={true} width={170}
+                            src="/assets/images/Hourglass-Emoji.png"
+                            removeWrapper={true} width={130}
                         />
                     </CardBody>
                     <Divider/>
@@ -209,9 +212,9 @@ function App() {
                         <Link
                             isExternal
                             showAnchorIcon
-                            href="https://github.com/nextui-org/nextui"
+                            href="https://tagesschau.de"
                         >
-                            Visit source code on GitHub.
+                            Read the news in the meantime.
                         </Link>
                     </CardFooter>
                 </Card>

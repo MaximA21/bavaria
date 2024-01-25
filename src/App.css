@@ -148,10 +148,10 @@ overflow: hidden;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 20px;
-    font-family: Archive;
+    font-family: Primary, sans-serif;
     color: #838383
 }
 
@@ -172,4 +172,14 @@ overflow: hidden;
 .between-lines_wrapper-gradient__abLQd:after,.between-lines_wrapper-gradient__abLQd:before {
     background: linear-gradient(90deg,rgba(216,236,248,0),rgba(184,216,254,.32));
     width: 86px
+}
+
+h1 {
+    color: #838383;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.prim {
+    background-color: #838383;
 }

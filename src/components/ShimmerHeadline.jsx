@@ -25,7 +25,7 @@ const ShimmerH2 = styled.h2`
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Primary;
+    font-family: Primary, sans-serif;
     text-align: center;
     text-align: center;
 
