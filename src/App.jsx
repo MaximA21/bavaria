@@ -88,18 +88,21 @@ function App() {
                         />
                         <div className="flex flex-col">
                             <p className="text-md">MunichStore</p>
-                            <a href={"https://themunichstore.vercel.app"}
-                               className="text-small text-default-500 underline">themunichstore.vercel.app</a>
+                            <p className={"text-small text-default-500"}>(Still in development)</p>
+                            <a href={"https://themunichstore21.vercel.app"}
+                               className="text-small text-default-500 underline" target="_blank" rel="noreferrer">themunichstore.vercel.app</a>
                         </div>
                     </CardHeader>
                     <Divider/>
                     <CardBody className="overflow-visible py-2 ">
+                        <a className={"m-auto"} href={"https://themunichstore21.vercel.app"} target="_blank" rel="noreferrer">
                         <Image
                             alt="Card background"
                             className="object-cover rounded-xl m-auto"
-                            src="/assets/images/bavarianBrezel.png"
+                            src="/assets/images/previewMunichStore.png"
                             removeWrapper={true} width={170}
                         />
+                        </a>
                     </CardBody>
                     <Divider/>
                     <CardFooter>
@@ -125,18 +128,20 @@ function App() {
                         />
                         <div className="flex flex-col">
                             <p className="text-md">VanillaBlog</p>
-                            <a href={"https://blogvanilla.vercel.app"}
+                            <a href={"https://blogvanilla.vercel.app"} target="_blank" rel="noreferrer"
                                className="text-small text-default-500 underline ">blogvanilla.vercel.app</a>
                         </div>
                     </CardHeader>
                     <Divider/>
                     <CardBody className="overflow-visible py-2 ">
+                        <a className={"m-auto"} href={"https://blogvanilla.vercel.app"} target="_blank" rel="noreferrer">
                         <Image
                             alt="Card background"
                             className="object-cover rounded-xl m-auto"
                             src="/assets/images/previewVanilla.png"
                             removeWrapper={true} width={170}
                         />
+                        </a>
                     </CardBody>
                     <Divider/>
                     <CardFooter>
@@ -167,12 +172,14 @@ function App() {
                     </CardHeader>
                     <Divider/>
                     <CardBody className="overflow-visible py-2 ">
+                        <a className={"m-auto"} href={"https://www.iabg.de/sichere-mobilitaet-der-zukunft/sicheres-autonomes-fahren/testfeld-fuer-autonomes-fahren"} target="_blank" rel="noreferrer">
                         <Image
                             alt="Card background"
                             className="object-cover rounded-xl m-auto"
                             src="/assets/images/previewFd.png"
                             removeWrapper={true} width={170}
                         />
+                        </a>
                     </CardBody>
                     <Divider/>
                     <CardFooter>
