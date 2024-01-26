@@ -23,8 +23,7 @@ const ShimmerH2 = styled.h2`
     font-size: 5rem;
 
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
     font-family: Primary, sans-serif;
     text-align: center;
     text-align: center;
@@ -35,24 +34,10 @@ const ShimmerH2 = styled.h2`
     background: linear-gradient(90deg, #838383, #ccc, #ffffff, #ccc, #838383);
     background-size: 60% 100%;
     background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: ${Shimmer} 7s ease-in infinite;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-color: #838383;
-
-    &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 110%; /* Breite des Bildes anpassen */
-        height: 100%; /* Höhe des Bildes anpassen */
-        transform: scale(0.1);
-        transform-origin: top right;
-        rotate: 45deg;
-        background: url('public/Screenshot_2024-01-24_at_03.51.50-removebg-preview.png') center center no-repeat; /* Pfad zum Bild hier einfügen */
-        background-size: cover; /* Bildgröße anpassen */
-    }
-
 `
