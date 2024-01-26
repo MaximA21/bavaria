@@ -3,10 +3,12 @@ import {Spotlight} from "./components/Spotlight.jsx";
 import {ShimmerHeadline} from "./components/ShimmerHeadline.jsx";
 import {Button, Card, CardBody, CardFooter, CardHeader, Divider, Image, Link} from "@nextui-org/react";
 import {SocialsIcon} from "./components/SocialsIcon.jsx";
+import {Analytics} from "@vercel/analytics/react";
 
 function App() {
     return (
         <>
+            <Analytics />
             <header className="pb-32 pt-2 flex gap-5 items-center justify-center">
 <a href={"https://www.linkedin.com/in/maxim-akishin-78a7a0259"} target={"_blank"} rel={"noreferrer"}>
                 <Button className={"bg-main"}
